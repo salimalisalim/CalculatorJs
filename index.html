@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>  
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator-grid">
+        <div class="output">
+            <!-- <div class="previous-operand"></div> -->
+            <input id="result" type="text">
+            <!-- <div class="current-operand">
+            </div> -->
+        </div>
+        <input class="btn span-two" type="button" onclick="clearBox()" value="AC">
+        <input class="btn" type="button" onclick="deleteFun()" value="DEL">
+        <input  onclick="displayNum('/')" type="button" class="btn" value="÷">
+        <input onclick="displayNum('7')" type="button" class="btn" value="7" >
+        <input class="btn" value="8" type="button"  onclick="displayNum('8')">
+        <input class="btn" value="9" type="button" onclick="displayNum('9')">
+        <input class="btn" value="*" type="button" onclick="displayNum('*')">
+        <input class="btn" value="4" type="button" onclick="displayNum('4')">
+        <input type="button" class="btn" value="5" onclick="displayNum('5')">
+        <input type="button" class="btn" value="6" onclick="displayNum('6')">
+        <input type="button" class="btn" value="+" onclick="displayNum('+')">
+        <input type="button" value="1" class="btn" onclick="displayNum('1')">
+        <input type="button" class="btn" value="2" onclick="displayNum('2')">
+        <input type="button"  value="3" class="btn" onclick="displayNum('3')">
+        <input type="button" class="btn" value="-" onclick="displayNum('-')">
+        <input type="button" value="." class="btn" onclick="displayNum('.')">
+        <input type="button" class="btn" value="0" onclick="displayNum('0')">
+        <input type="button" class=" btn span-two" value="=" onclick="evaluateExpression()">
+    </div>
+  
+</body>
+</html>
